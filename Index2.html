@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servis Elektronik Ronal - ID Card & Services</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="id-card">
+        <div class="card-header main-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="image/Logo.png" alt="Servis Elektronik Ronal - Terpercaya dan Bergaransi" class="main-logo">
+                </div>
+                </div>
+        </div>
+        
+        <div class="card-body">
+            <div class="profile-img">
+                <img src="image/Ronald.png" alt="Foto Profil Ronald">
+            </div>
+            <div class="info">
+                <p><strong>Nama:</strong> Ronald Manullang</p>
+                <p><strong>Lokasi:</strong> Deli Serdang, Sumatera Utara</p>
+                <p><strong>Spesialis:</strong> Audio & Peralatan Rumah Tangga</p>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a href="https://wa.me/6282167974320" class="btn-wa">Hubungi via WhatsApp</a>
+        </div>
+    </div>
+
+    <section class="services-section">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon">🔊</div>
+                <h3>Audio & Sound System</h3>
+                <p>Servis speaker aktif, upgrade watt (Sanken), modifikasi Bluetooth, dan optimasi suara.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🍲</div>
+                <h3>Peralatan Dapur</h3>
+                <p>Spesialis Rice Cooker (Yong Ma & lainnya), Magic Com, Blender, Mixer, dan Setrika.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">⚡</div>
+                <h3>Modifikasi & Komponen</h3>
+                <p>Perbaikan modul elektronik, power supply, rakitan adaptor, dan ganti komponen presisi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="section-title">Galeri Hasil Kerja</h2>
+        <div class="gallery-container" id="gallery-container">
+            <div class="gallery-item">
+                <img src="image/Sound Polytron.jpg" alt="Upgrade Audio">
+                <div class="gallery-desc">Upgrade Power Speaker 150W</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/Module.webp" alt="Magic Com">
+                <div class="gallery-desc">Servis Magic Com Yong Ma</div>
+            </div>
+
+            <div class="gallery-item hidden">
+                <img src="image/Sevis CPU.jpg" alt="Modul Bluetooth">
+                <div class="gallery-desc">Pasang Modul Bluetooth Audio</div>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="image/Solder.jpg" alt="Power Supply">
+                <div class="gallery-desc">Rakitan Adaptor 12V Custom</div>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="image/sanyo.jpg" alt="Pompa air">
+                <div class="gallery-desc">Pompa air Bising</div>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="image/Penggantian lcd.webp" alt="Servis HP">
+                <div class="gallery-desc">Hp Rusak, Hang, blank,dll</div>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="image/Instalasi Listrik.jpg" alt="Instalasi Listrik Rumah">
+                <div class="gallery-desc">Pemasangan Baru, Perbaikan Jaringan Listrik</div>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="image/foto-servis.jpg.png" alt="Kulkas Banjir">
+                <div class="gallery-desc">Kulkas 2 Pintu Banjir</div>
+            </div>
+        </div>
+
+        <button id="loadMoreBtn" class="btn-load">Lihat Selengkapnya</button>
+    </section>
+
+    <script>
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const hiddenItems = document.querySelectorAll('.gallery-item.hidden');
+
+        loadMoreBtn.addEventListener('click', function() {
+            hiddenItems.forEach(item => {
+                item.classList.remove('hidden');
+            });
+            loadMoreBtn.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
